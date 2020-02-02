@@ -1,0 +1,41 @@
+{
+    "cSpell.enabledLanguageIds": [
+        "asciidoc",
+        "c",
+        "cpp",
+        "csharp",
+        "css",
+        "django-html",
+        "git-commit",
+        "go",
+        "handlebars",
+        "haskell",
+        "html",
+        "jade",
+        "java",
+        "javascript",
+        "javascriptreact",
+        "json",
+        "jsonc",
+        "latex",
+        "less",
+        "markdown",
+        "php",
+        "plaintext",
+        "pug",
+        "restructuredtext",
+        "rust",
+        "scala",
+        "scss",
+        "text",
+        "typescript",
+        "typescriptreact",
+        "yaml",
+        "yml"
+    ],
+    "workbench.settings.enableNaturalLanguageSearch": false,
+    "cSpell.ignoreWords": [
+        "beforeend",
+        "uncheck"
+    ]
+}
