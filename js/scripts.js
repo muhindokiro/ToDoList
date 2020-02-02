@@ -38,3 +38,17 @@ dateElement.innerHTML = today.toLocaleDateString("en-US", options);
 //Variables
 let LIST = [],
     id = 0;
+
+
+list.addEventListener("click", function(event) {
+    let element = event.target;
+    const elementJob = event.target.attributes.job.value;
+    if (elementJob == "complete") {
+        completeToDo(element);
+
+    } else if (elementJob == "delete") {
+        removeToDo(element);
+
+    }
+
+});
