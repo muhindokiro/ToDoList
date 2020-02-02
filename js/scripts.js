@@ -105,7 +105,7 @@ function removeToDo(element) {
     LIST[element.id].trash = true;
 }
 
-// Add a task or reminder
+// Add a task when enter key is pressed
 document.addEventListener("keyup", function(event) {
     if (event.keyCode == 13) {
         const toDo = input.value;
@@ -139,4 +139,12 @@ if (data) {
 } else {
     LIST = [];
     id = 0;
+}
+
+//load items to the user's interface
+function loadList(array) {
+    array.forEach(function(item) {
+        addToDo(item.name, item.id, item.done, item.trash);
+
+    });
 }
