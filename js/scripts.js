@@ -127,3 +127,6 @@ document.addEventListener("keyup", function(event) {
 
     }
 });
+
+// retrieve item from local storage
+let data = localStorage.getItem("TODO");
