@@ -50,5 +50,16 @@ list.addEventListener("click", function(event) {
         removeToDo(element);
 
     }
+    // Add local storage
+    localStorage.setItem("TODO", JSON.stringify(LIST));
+
 
 });
+
+
+// Class names
+const CHECK = "fa-check-circle";
+
+const UNCHECK = "fa-circle-thin";
+
+const LINE_THROUGH = "lineThrough";
