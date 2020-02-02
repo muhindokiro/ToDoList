@@ -27,3 +27,10 @@ function renderTime() {
 
 }
 renderTime();
+
+
+//Date of To Do List  
+let options = { weekday: "long", month: "long", day: "numeric", year: "numeric" };
+let today = new Date();
+
+dateElement.innerHTML = today.toLocaleDateString("en-US", options);
