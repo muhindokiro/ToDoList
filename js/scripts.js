@@ -98,3 +98,9 @@ function completeToDo(element) {
     LIST[element.id].done = LIST[element.id].done ? false : true;
 
 }
+
+// Remove if task is complete
+function removeToDo(element) {
+    element.parentNode.parentNode.removeChild(element.parentNode);
+    LIST[element.id].trash = true;
+}
