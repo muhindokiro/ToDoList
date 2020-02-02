@@ -104,3 +104,26 @@ function removeToDo(element) {
     element.parentNode.parentNode.removeChild(element.parentNode);
     LIST[element.id].trash = true;
 }
+
+// Add a task or reminder
+document.addEventListener("keyup", function(event) {
+    if (event.keyCode == 13) {
+        const toDo = input.value;
+        if (toDo) {
+            addToDo(toDo, id, false, false);
+
+            LIST.push({
+                name: toDo,
+                id: id,
+                done: false,
+                trash: false
+            });
+            // Add local storage
+            localStorage.setItem("TODO", JSON.stringify(LIST));
+
+            id++;
+        }
+        input.value = "";
+
+    }
+});
